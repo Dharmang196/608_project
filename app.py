@@ -13,7 +13,7 @@ def simulate_data_stream(df, delay=1):
         time.sleep(delay)
 
 # Read the CSV file into a DataFrame
-file_path = "C:/Users/desai/Downloads/HomeC_sampled.csv"  # Update to your file path
+file_path = "HomeC_sampled.csv"  # Update to your file path
 df = pd.read_csv(file_path)
 
 # Convert the 'time' column to a more readable date format
