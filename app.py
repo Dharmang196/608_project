@@ -68,7 +68,6 @@ avg_consumption_per_day = df.groupby('date')[energy_columns].mean()
 
 # Visualization for Objective 1
 for column in energy_columns:
-    st.subheader(f'Average Daily {column.replace(" [kW]", "")}')
     fig = px.line(avg_consumption_per_day, x=avg_consumption_per_day.index, y=column, labels={'x': 'Date', 'y': 'Average kW'}, title=f'Average Daily {column.replace(" [kW]", "")}')
     st.plotly_chart(fig)
 
