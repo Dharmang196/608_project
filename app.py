@@ -54,11 +54,6 @@ if st.session_state.simulate:
         fig = px.line(subset_df, x='date', y=energy_column, labels={'x': 'Date', 'y': 'Energy Use [kW]'}, title="Real-time Energy Consumption")
         real_time_chart_placeholder.plotly_chart(fig, use_container_width=True)
 
-# Objective 1: Average Daily Energy Consumption Analysis
-st.header("Average Daily Energy Consumption Analysis")
-st.markdown("""
-Below are the interactive graphs representing the average daily energy consumption for various appliances and systems in a home.
-""")
 
 # Select columns containing '[kW]'
 energy_columns = [col for col in df.columns if '[kW]' in col]
