@@ -37,8 +37,6 @@ This application provides an analysis of home energy consumption and the relatio
 """)
 
 # Sidebar
-st.sidebar.header("Configuration")
-st.sidebar.markdown("Use this sidebar to navigate through the application and configure your settings.")
 if st.sidebar.button('Start/Stop Simulation'):
     st.session_state.simulate = not st.session_state.simulate  # Toggle the simulation state
 
