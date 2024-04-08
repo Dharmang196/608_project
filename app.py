@@ -55,7 +55,7 @@ if st.session_state.simulate:
         real_time_chart_placeholder.plotly_chart(fig, use_container_width=True)
 
 # Objective 1: Average Daily Energy Consumption Analysis
-st.header("Objective 1: Average Daily Energy Consumption Analysis")
+st.header("Average Daily Energy Consumption Analysis")
 st.markdown("""
 Below are the interactive graphs representing the average daily energy consumption for various appliances and systems in a home.
 """)
@@ -73,7 +73,7 @@ for column in energy_columns:
     st.plotly_chart(fig)
 
 # Objective 2: Correlation Analysis Between Weather and Energy Usage
-st.header("Objective 2: Correlation Analysis Between Weather and Energy Usage")
+st.header("Correlation Analysis Between Weather and Energy Usage")
 st.markdown("""
 The following section showcases the correlation between various weather variables and the overall energy usage (in kW) in the home.
 """)
