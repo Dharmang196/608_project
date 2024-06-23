@@ -30,7 +30,7 @@ if 'simulate' not in st.session_state:
     st.session_state.simulate = False
 
 # Title of the application
-st.title("Home Energy Consumption Analysis")
+st.title("Home Energy Analysis")
 
 st.markdown("""
 This application provides an analysis of home energy consumption and the relationship between energy usage and weather conditions.
